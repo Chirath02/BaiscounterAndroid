@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chirath.day1.MainActivity">
+
+    <Button
+        android:text="+1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:id="@+id/incrementButton"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/decrementButton"
+        android:layout_alignBottom="@+id/decrementButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="198dp"
+        android:id="@+id/textView"
+        android:textStyle="normal|bold"
+        android:textSize="100dp"
+        android:layout_marginTop="163dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:id="@+id/progressBar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/decrementButton"
+        android:layout_alignStart="@+id/decrementButton"
+        android:layout_alignRight="@+id/incrementButton"
+        android:layout_alignEnd="@+id/incrementButton" />
+
+    <Button
+        android:text="-1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:id="@+id/decrementButton"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="26dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
